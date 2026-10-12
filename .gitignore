@@ -1,0 +1,10 @@
+﻿# Ignore extra generated folders/files for now
+src/
+data/
+docs/
+models/
+config.yaml
+nirman.py
+__pycache__/
+*.pyc
+.env

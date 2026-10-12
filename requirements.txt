@@ -1,0 +1,47 @@
+﻿# ============================================================
+# NIRMAN - requirements.txt
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# ── Core ──────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+typer>=0.12.0
+rich>=13.7.0
+loguru>=0.7.2
+
+# ── Local LLM (Ollama) ────────────────────────────────────────
+ollama>=0.2.1
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-ollama>=0.1.0
+
+# ── STT — Whisper ─────────────────────────────────────────────
+faster-whisper>=1.0.0     # Optimised Whisper (CTranslate2 backend)
+pyaudio>=0.2.14           # Microphone access
+sounddevice>=0.4.6        # Cross-platform audio I/O
+soundfile>=0.12.1         # WAV read/write
+numpy>=1.26.0
+
+# ── TTS — Piper ───────────────────────────────────────────────
+piper-tts>=1.2.0          # Primary TTS engine
+pydub>=0.25.1             # Audio manipulation
+pyttsx3>=2.90             # Fallback TTS (no extra install needed)
+
+# ── RAG / Vector Store ────────────────────────────────────────
+chromadb>=0.5.0           # Local vector database
+langchain-chroma>=0.1.0
+sentence-transformers>=3.0.0
+
+# ── Document Parsing ──────────────────────────────────────────
+pymupdf>=1.24.0           # PDF parsing (fitz)
+python-docx>=1.1.0        # .docx parsing
+unstructured>=0.14.0      # Universal document loader
+markdown>=3.6
+
+# ── Web UI ────────────────────────────────────────────────────
+gradio>=4.36.0
+
+# ── Dev / Testing ─────────────────────────────────────────────
+pytest>=8.0.0
+tqdm>=4.66.0
